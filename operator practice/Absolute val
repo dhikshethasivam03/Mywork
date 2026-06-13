@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+
+        int num = new Scanner(System.in).nextInt();
+
+        if(num < 0)
+            num = -num;
+
+        System.out.println(num);
+    }
+}

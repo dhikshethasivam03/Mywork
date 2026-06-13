@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+
+        int num = new Scanner(System.in).nextInt();
+
+        int d1 = num / 100;
+        int d2 = (num / 10) % 10;
+        int d3 = num % 10;
+
+        int max = d1;
+
+        if(d2 > max) max = d2;
+        if(d3 > max) max = d3;
+
+        System.out.println(max);
+    }
+}
