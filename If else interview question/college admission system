@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int math = sc.nextInt();
+        int physics = sc.nextInt();
+        int chemistry = sc.nextInt();
+
+        if(math >= 80 && physics >= 75 && chemistry >= 70)
+        {
+            System.out.println("Eligible for CSE");
+        }
+        else
+        {
+            System.out.println("Not Eligible");
+        }
+    }
+}

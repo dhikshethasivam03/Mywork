@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        String name = sc.next();
+        double salary = sc.nextDouble();
+        int exp = sc.nextInt();
+        int rating = sc.nextInt();
+
+        double bonus = 0;
+
+        if(exp >= 5 && rating >= 4)
+        {
+            bonus = salary * 0.20;
+        }
+        else if(exp >= 3 && rating >= 3)
+        {
+            bonus = salary * 0.10;
+        }
+
+        double newSalary = salary + bonus;
+
+        System.out.println("Employee: " + name);
+        System.out.println("Bonus: " + bonus);
+        System.out.println("New Salary: " + newSalary);
+    }
+}

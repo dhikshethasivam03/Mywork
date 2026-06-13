@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        double cgpa = sc.nextDouble();
+        int coding = sc.nextInt();
+        int communication = sc.nextInt();
+
+        if(cgpa >= 7.5 &&
+           coding >= 80 &&
+           communication >= 70)
+        {
+            System.out.println("Selected");
+        }
+        else
+        {
+            System.out.println("Rejected");
+        }
+    }
+}

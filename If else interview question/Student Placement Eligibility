@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        double cgpa = sc.nextDouble();
+        int backlogs = sc.nextInt();
+        int attendance = sc.nextInt();
+
+        if(cgpa >= 7.0 &&
+           backlogs == 0 &&
+           attendance >= 75)
+        {
+            System.out.println("Eligible");
+        }
+        else
+        {
+            System.out.println("Not Eligible");
+        }
+    }
+}

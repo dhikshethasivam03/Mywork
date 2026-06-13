@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int marks = sc.nextInt();
+        int income = sc.nextInt();
+        int attendance = sc.nextInt();
+
+        if(marks >= 85 && income < 300000 && attendance >= 90)
+        {
+            System.out.println("Scholarship Approved");
+        }
+        else
+        {
+            System.out.println("Scholarship Rejected");
+        }
+    }
+}
