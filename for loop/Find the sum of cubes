@@ -1,0 +1,12 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Please Enter The Number: ");
+        int n = sc.nextInt();
+        int cubes = 0;
+        for(int i = 0; i <= n; i++)
+        cubes= (i * i * i) + cubes;
+        System.out.println(cubes);
+    }
+}
